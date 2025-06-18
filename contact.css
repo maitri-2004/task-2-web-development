@@ -1,0 +1,140 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+header {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 1rem;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav a:hover {
+  color: #ffea00;
+}
+
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 15px;
+  padding: 2rem;
+  backdrop-filter: blur(20px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+
+form input,
+form textarea,
+form button,
+.todo-input input,
+.todo-input button {
+  width: 100%;
+  margin-top: 1rem;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 1rem;
+  outline: none;
+  transition: 0.3s ease;
+}
+
+form input, form textarea, .todo-input input {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+form input::placeholder, form textarea::placeholder, .todo-input input::placeholder {
+  color: #ccc;
+}
+
+form button,
+.todo-input button {
+  background-color: #ffea00;
+  color: #333;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+form button:hover,
+.todo-input button:hover {
+  background-color: #fff700;
+}
+
+
+#formMessage {
+  margin-top: 1rem;
+  font-weight: bold;
+}
+
+
+#taskList {
+  list-style: none;
+  margin-top: 1rem;
+  padding: 0;
+}
+
+#taskList li {
+  background-color: rgba(255, 255, 255, 0.2);
+  margin-bottom: 10px;
+  padding: 0.8rem;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+
+#taskList li button {
+  background: crimson;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 0.3rem 0.6rem;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+#taskList li button:hover {
+  background: #ff4b5c;
+}
+
+

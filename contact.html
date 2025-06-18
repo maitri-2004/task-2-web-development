@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skill Builder</title>
+  <link rel="stylesheet" href="contact.css"/>
+</head>
+<body>
+  <header>
+    <h1> Web Skill Builder</h1>
+    <nav>
+      <a href="#contact">Contact</a>
+      <a href="#todo">To-Do List</a>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section id="contact" class="glass-card">
+      <h2> Contact Form</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your Email" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+        <p id="formMessage"></p>
+      </form>
+    </section>
+
+    <section id="todo" class="glass-card">
+      <h2> To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="Add a task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  
+
+  <script src="contact.js"></script>
+</body>
+</html>
